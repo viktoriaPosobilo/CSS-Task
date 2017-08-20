@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>testTask by Posobilo Viktoria</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!— Brand and toggle get grouped for better mobile display —>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand"  href="#">
+                    <span class="glyphicon glyphicon glyphicon-grain" aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <form class="navbar-form navbar-nav">
+                    <div class="form-group">
+                        <input type="text" class="inputHeader" placeholder="Input">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="username"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span> Username </li>
+                    <li><button id="buttonExit">EXIT <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> </button></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid mainBg">
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div>
+                                    <div class="pull-left">Menu #1</div>
+                                    <div class="pull-right"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <div>1/1</div>
+                            <div>1/2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div>
+                                    <div class="pull-left">Menu #2</div>
+                                    <div class="pull-right"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <div>2/1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div>
+                                    <div>Menu #3</div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <div>
+                                    <div class="pull-left">Menu #4</div>
+                                    <div class="pull-right"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <div>3/1</div>
+                            <div>3/2</div>
+                            <div>3/3</div>
+                            <div>3/4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Block 1: Forms</h2>
+                    <h3>Custom input</h3>
+                    <div class="inputBodyCustom">
+                        <input class="input" placeholder="Please Enter Text" type="text" >
+                        <div class="underline"></div>
+                    </div>
+                    <h3>Custom textarea</h3>
+                    <textarea class="textareaCustom" rows='3' name=tx1 id=tx1 rows=4></textarea>
+                    <h3>Custom select box</h3>
+                    <div>
+                        <select class='selectBoxCustom' name='s1'>
+                            <option value='One'>Select button 1 </option>
+                            <option value='Two'>Select button 2</option>
+                            <option value='Three'>Select button 3</option>
+                            <option value='Four'>Select button 4</option>
+                        </select>
+                    </div>
+                    <h3>Custom radio button</h3>
+                    <div class="radioBlockCustom">
+                        <input type="radio" id="test1" name="radio-group" checked>
+                        <label for="test1">Choice 1</label>
+
+                        <input type="radio" id="test2" name="radio-group">
+                        <label for="test2">Choice 2</label>
+                    </div>
+                    <h3>Custom checkbox</h3>
+                    <div class="checkBox">
+                        <input type="checkbox" value="None" id="checkBox" name="check" checked />
+                        <label for="checkBox"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row tableBox">
+                <div class="col-xs-12">
+                    <h2>Block 2: Table</h2>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footerCustom">
+    <div>Create Posobilo Viktoria</div>
+    <div><a href="https://www.linkedin.com/in/viktoria-posobilo-8460b689/" target="_blank" style="color: white">LinedIn profile</a> </div>
+    <div>vika.posobilo@gmail.com</div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
